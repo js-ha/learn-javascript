@@ -44,10 +44,13 @@ console.log(10 >= 6); // greater than or equal
 const value1 = true;
 const value2 = 4 < 2;
 
-// || (or), finds the first truthy value
+// || (or), finds the first truthy value // 처음으로 true가 나오면 멈춘다. 어떤것이든 하나라도 트루면 나는 트루야.
+// 코드지적질!! => 연산을 많이하는 함수를 호출하는 함수를 제일 앞에 두게 되면 안됨!! 심플한 벨류 아이들을 앞에 둬서 얘네들이 false일 때만 마지막에 마지못해서 호출하는게 제일 좋음.
+// 즉, 복잡한 함수로 호출하는 아이들을 제일 뒤에다가 배치할 것!
 console.log(`or: ${value1 || value2 || check()}`);
 
 // && (and), finds the first falsy value
+// 헤비한 오퍼레이션일수록 제일 뒤에서 체크하는 것이 좋음!
 console.log(`and: ${value1 && value2 && check()}`);
 
 // often used to compress long if-statement
@@ -86,11 +89,11 @@ console.log(ellie1 === ellie3);
 
 // equality - puzzler
 console.log(0 == false);
-console.log(0 === false);
+console.log(0 === false); // 불리언 타입이 아니기 때문에 false
 console.log('' == false);
-console.log('' === false);
-console.log(null == undefined);
-console.log(null === undefined);
+console.log('' === false); // 불리언 타입이 아니기 때문에 false
+console.log(null == undefined); // true
+console.log(null === undefined); // false
 
 // 8. Conditional operators: if
 // if, else if, else

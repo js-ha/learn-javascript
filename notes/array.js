@@ -69,15 +69,15 @@ console.clear();
 console.log(fruits);
 console.log(fruits.indexOf('🍎'));
 console.log(fruits.indexOf('🍉'));
-console.log(fruits.indexOf('🥥'));
+console.log(fruits.indexOf('🥥')); // -1
 
-// includes
-console.log(fruits.includes('🍉'));
-console.log(fruits.includes('🥥'));
+// includes => 불리언타입으로 리턴
+console.log(fruits.includes('🍉')); // true
+console.log(fruits.includes('🥥')); // false
 
 // lastIndexOf
 console.clear();
 fruits.push('🍎');
 console.log(fruits);
-console.log(fruits.indexOf('🍎'));
-console.log(fruits.lastIndexOf('🥥'));
+console.log(fruits.indexOf('🍎')); // 첫 번째로 해당하는 값
+console.log(fruits.lastIndexOf('🍎')); // 마지막에 해당하는 값

@@ -32,7 +32,7 @@ const daysInWeek = 7;
 const maxNumber = 5;
 
 // Note!
-// Immutable data types: premitive types, frozen objects (i.e. object.freeze())
+// Immutable data types: primitive types, frozen objects (i.e. object.freeze())
 // Mutable data types: all objects by default are mutable in JS
 // favor immutable data type always for a few reasons:
 //  - security

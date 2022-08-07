@@ -4,6 +4,8 @@
 // a collection of related data and/or functionality.
 // Nearly all objects in JavaScript are instances of Object
 // object = { key : value };
+
+// 1. Literals and properties
 const obj1 = {}; // 'object literal' syntax
 const obj2 = new Object(); // 'object constructor' syntax
 
@@ -26,8 +28,8 @@ console.log(ellie.hasJob);
 
 // 2. Computed properties
 // key should be always string
-console.log(ellie.name);
-console.log(ellie['name']);
+console.log(ellie.name); // 코딩하는 그 순간, 키에 해당하는 값을 받아오고 싶을 때
+console.log(ellie['name']); // 우리가 정확하게 어떤 키가 필요한지 모를 때! 즉, 런타임에서 결정될 때
 ellie['hasJob'] = true;
 console.log(ellie.hasJob);
 
@@ -59,7 +61,7 @@ console.log('random' in ellie);
 console.log(ellie.random);
 // 6. for..in vs for..of
 // for (key in obj)
-console.clear();
+console.clear(); // 이전 로그 기록 지우기
 for (let key in ellie) {
   console.log(key);
 }

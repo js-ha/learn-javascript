@@ -9,7 +9,7 @@
 // 1. Class declarations
 class Person {
   // constructor
-  constructor(name, age) {
+  constructor(name, age) { // 우리가 나중에 오브젝트를 만들 때 필요한 데이터를 전달함.
     // fields
     this.name = name;
     this.age = age;
@@ -58,7 +58,7 @@ class Experiment {
 }
 const experiment = new Experiment();
 console.log(experiment.publicField);
-console.log(experiment.privateField);
+console.log(experiment.privateField); // undefined
 
 // 4. Static properties and methods
 // Too soon!
@@ -103,7 +103,7 @@ class Triangle extends Shape {
     console.log('🔺');
   }
   getArea() {
-    return (this.width * this.height) / 2;
+    return (this.width * this.height) / 2; // 필요한 함수들만 오버라이딩 해서 작성할 수 있음
   }
 
   toString() {

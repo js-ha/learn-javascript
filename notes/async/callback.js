@@ -1,10 +1,10 @@
 'use strict';
 
 // JavaScript is synchronous.
-// Execute the code block by orger after hoisting.
+// Execute the code block in order after hoisting.
 // hoisting: var, function declaration
 console.log('1');
-setTimeout(() => console.log('2'), 1000);
+setTimeout(() => console.log('2'), 1000); // 브라우저야, 너에게 요청이 왔어!
 console.log('3');
 
 // Synchronous callback
@@ -47,7 +47,7 @@ class UserStorage {
 
 const userStorage = new UserStorage();
 const id = prompt('enter your id');
-const password = prompt('enter your passrod');
+const password = prompt('enter your password');
 userStorage.loginUser(
   id,
   password,

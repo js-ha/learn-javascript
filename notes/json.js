@@ -22,9 +22,9 @@ const rabbit = {
 };
 
 json = JSON.stringify(rabbit);
-console.log(json);
+console.log(json); // 함수는 오브젝트에 있는 데이터가 아니기 때문에 제외됨
 
-json = JSON.stringify(rabbit, ['name', 'color', 'size']);
+json = JSON.stringify(rabbit, ['name', 'color', 'size']); // 해당하는 프로퍼티만 제이슨으로 변환 됨
 console.log(json);
 
 json = JSON.stringify(rabbit, (key, value) => {
@@ -47,4 +47,4 @@ rabbit.jump();
 // obj.jump();
 
 console.log(rabbit.birthDate.getDate());
-console.log(obj.birthDate.getDate());
+console.log(obj.birthDate.getDate()); 
